@@ -4,6 +4,13 @@ Data for the CorrelAid x City Interaction Lab February 2021. Challenge 2: Housin
 ## Read in Data
 
 ### Python 
+```python
+import pandas as pd
+import geopandas
+df = pd.read_csv("data/social-housing-paris/logements-sociaux-finances-a-paris.csv", sep = ";")
+
+df_geo = geopandas.read_file("data/social-housing-paris/logements-sociaux-finances-a-paris.geojson")
+```
 
 ### R
 ```r
